@@ -316,6 +316,14 @@ table th {
   margin: 0 10px 0 0;
 }
 
+.thumbnail{
+  margin-left: -12px; padding-right: 4px;
+}  
+
+.thumbnail img {
+  margin-top: 0px;
+}
+
 #mainmenu nav {
   border-top: 1px solid var(--line-color);
   border-bottom: 1px solid var(--line-color);

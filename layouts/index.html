@@ -85,6 +85,11 @@
 </p>
 {{- end }}
 <p class="description">{{ if isset .Params "description" }}{{ .Description }}{{ else }}{{ .Plain | htmlUnescape | safeHTML | truncate 140 }}{{ end }}</p>
+<div class="description">
+	{{if eq .Site.Params.readtime.enableListing true }}
+		{{printf `<small>%d min read</small>`  .ReadingTime | safeHTML }}
+	{{end}}
+</div>
 </article>
 </div>
 </div>

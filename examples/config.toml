@@ -74,6 +74,11 @@ googleAnalytics = ""
 	# Show author on a post (groups with readingTime and wordCount)
 	hideAuthor = true
 
+# Thumbnails
+[params.thumbnails]
+# enable thumbnails by setting to true
+enabled = false
+
 # Custom JavaScript
 [params.customjs]
 # enable Javascript by setting to true

@@ -1,5 +1,20 @@
 {{- if .Site.Copyright }}
 <footer>
+<div id="social">
+<nav style="max-width: none"><ul>
+{{- if isset .Site.Params "social" }}
+{{- if eq .Site.Params.Position.Socials "footer" }}
+{{- range $index, $key := .Site.Params.Social }}
+{{- if $key.url }}
+<li><a href="{{ relURL $key.url }}" rel="me" aria-label="{{ $key.name }}"><span title="{{ $key.name }}" class="icons {{ $key.icon }}" aria-hidden="true"></span></a></li>
+{{- else }}
+<li><a href="{{ $key.cmd | safeURL }}" aria-label="{{ $key.name }}"><span title="{{ $key.name }}" class="icons {{ $key.icon }}" aria-hidden="true"></span></a></li>
+{{- end }}
+{{- end }}
+{{- end }}
+{{- end }}
+</ul></nav>
+</div>
 {{ with .Site.Copyright }}{{ . | markdownify }}{{ end }}
 {{- if not .Site.IsServer }}
 {{- template "_internal/google_analytics_async.html" . }}

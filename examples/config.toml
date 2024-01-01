@@ -74,6 +74,7 @@ googleAnalytics = ""
 	# Show author on a post (groups with readingTime and wordCount)
 	hideAuthor = true
 
+# ======================================================
 # Tim Abdiukov's improvements
 
 ## Thumbnails
@@ -85,6 +86,12 @@ enabled = false
 [params.readtime]
 # enable read time by setting to true
 enableListing = false
+
+## Change elements positioning
+[params.position]
+### socials: "header / "footer"
+socials = "header"
+# ======================================================
 
 # Custom JavaScript
 [params.customjs]

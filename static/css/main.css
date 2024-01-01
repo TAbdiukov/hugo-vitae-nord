@@ -224,6 +224,7 @@ table {
   margin-bottom: 1rem;
   overflow-x: auto;
   width: 100%;
+  border: 1px solid;
 }
 
 table th,
@@ -231,6 +232,7 @@ table td {
   border-bottom: 1px solid var(--tb1-color);
   padding: 0.75rem;
   vertical-align: top;
+  border: 1px solid
 }
 
 table thead th {
@@ -251,6 +253,7 @@ table th {
   background-color: var(--txt-color);
   border-color: var(--txt-color);
   color: var(--bg-color);
+  border: 1px solid
 }
 
 #avatar {

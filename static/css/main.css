@@ -345,7 +345,7 @@ table th {
 
 .icons {
   color: var(--txt-color);
-  font-size: 1.4rem;
+  font-size: 1.618rem;
 }
 
 .icons:hover {
@@ -374,7 +374,7 @@ table th {
     font-family: "Roboto Slab Regular", serif;
     font-weight: 700;
     line-height: 0.45em;
-    font-size: 3em;
+    font-size: 2.15em;
     display: block;
     margin-top: 10px;
     margin-bottom: 10px;

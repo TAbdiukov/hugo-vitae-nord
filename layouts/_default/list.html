@@ -39,11 +39,17 @@
 </p>
 {{- end }}
 <span class="description">{{ if isset .Params "description" }}{{ .Description }}{{ else }}{{ .Plain  | htmlUnescape | safeHTML | truncate 140 }}{{ end }}</span>
-<div class="description">
-	{{if eq .Site.Params.readtime.enableListing true }}
-		{{printf `<small>%d min read</small>`  .ReadingTime | safeHTML }}
-	{{end}}
-</div>
+<div class="description"><small>
+{{ if eq .Site.Params.postDisplay.read_time true }}
+	{{printf `%d min read`  .ReadingTime | safeHTML }}
+{{ end }}
+{{ if eq .Site.Params.postDisplay.tags true }}
+	{{if eq .Site.Params.postDisplay.read_time true }} — {{ end }}
+	{{ range .Params.tags }}
+	<a href="{{ "tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+	{{ end }}
+{{ end }}	
+</small></div>
 </article>
 </div>
 </div>

@@ -91,9 +91,9 @@
 {{ end }}
 {{ if eq .Site.Params.postDisplay.tags true }}
 	{{if eq .Site.Params.postDisplay.read_time true }} — {{ end }}
-	{{ range .Params.tags }}
+	<kbd>{{ range .Params.tags }}
 	<a href="{{ "tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-	{{ end }}
+	{{ end }}</kbd>
 {{ end }}	
 </small></div>
 </article>

@@ -82,10 +82,12 @@ googleAnalytics = ""
 # enable thumbnails by setting to true
 enabled = false
 
-## Read time
-[params.readtime]
-# enable read time by setting to true
-enableListing = false
+## Post display underneath a post
+[params.postDisplay]
+# enable read time display by setting to true 
+read_time = false
+# enable tags cloud display by setting to true 
+tags = false
 
 ## Change elements positioning
 [params.position]

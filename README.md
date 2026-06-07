@@ -1,4 +1,7 @@
 # Vitae
+
+[![buymeacoffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/tabdiukov)
+
 ... is a feature-rich blog theme for Hugo that **focuses on your content**.
 
 ## :mega: Version 3 is finally released!
